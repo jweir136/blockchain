@@ -5,7 +5,6 @@ pub type DynBlock = Box<dyn Block>;
 
 pub trait Block {
     fn hash(&self) -> Digest;
-    fn signature(&self) -> Option<Signature>;
 }
 
 pub trait Blockchain {
